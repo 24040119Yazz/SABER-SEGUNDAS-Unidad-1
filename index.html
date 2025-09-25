@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SABERES SEGUNDAS</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif; 
+      background-image: url(img/fondo1.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .navbar {
+      font-size: 1.1em;
+      background-color: rgb(114, 93, 93);
+      color: #2a1e1e;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 25px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 98%;
+      z-index: 100;
+    }
+    .navbar .left img {
+      height: 50px;
+    }
+    .navbar a {
+      margin: 10px;
+      text-decoration: none;
+      font-size: medium;
+      font-family: 'Poppins', sans-serif;
+      color: #ffffff;
+      font-weight: bold;
+    }
+
+    .banner {
+      width: 100%;
+      height: 200px;
+      background-color: #816947cf;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      margin-top: 70px;
+      margin-bottom: 20px;
+    }
+    .banner img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .banner .text {
+      position: absolute;
+      color: #140707b9;
+      font-size: 2.5em;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+    }
+    .banner .arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 3em;
+      color: white;
+      cursor: pointer;
+      user-select: none;
+    }
+    .banner .arrow.left { left: 20px; }
+    .banner .arrow.right { right: 20px; }
+
+  
+    .subtitulo {
+      text-align: center;
+      color: #242424;
+      font-size: 1.5em;
+      font-weight: 600;
+      margin-bottom: 25px;
+      margin-top: 10px;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    }
+
+ 
+    .cards-container {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 20px;
+      padding: 0 40px 40px 40px;
+    }
+    .card {
+      background: rgba(247, 244, 209, 0.95);
+      border-radius: 12px;
+      overflow: hidden;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+    .card .content {
+      padding: 15px;
+    }
+    .card h3 {
+      font-size: 1.5em;
+      color: #4c4f48;
+      font-weight: 700;
+      margin: 10px 0;
+    }
+    .card p {
+      font-size: 1em;
+      margin: 10px 0 20px 0;
+      color: #333;
+    }
+    .card a {
+      display: inline-block;
+      padding: 8px 15px;
+      background-color: #333;
+      color: #fff;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background 0.3s;
+      font-weight: 600;
+    }
+    .card a:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+<body>
+
+
+  <div class="navbar">
+    <div class="left">
+      <strong>UTC</strong>
+    </div>
+    <div class="right">
+      <a href="#">ALUMNO: Del Angel Rodriguez Guadalupe Yazmin 24040119</a>
+    </div>
+  </div>
+
+  
+  <div class="banner">
+    <span class="arrow left">&#10094;</span>
+    <div class="text">Bienvenido/a a SEGUNDAS de UNIDAD 1</div>
+    <span class="arrow right">&#10095;</span>
+  </div>
+
+ 
+  <div class="subtitulo">-> Selecciona la tarea que deseas ver:</div>
+
+
+  <div class="cards-container">
+    <div class="card">
+      <img src="img/SABER1.png" alt="Imagen 1">
+      <div class="content">
+        <h3>SABER</h3>
+        <p>Diseñar una presentación en CANVA.</p>
+        <a href="pdf/PresentacionCANVA.pdf" target="_blank" > Ver más</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="img/SABER HACER 1.png" alt="Imagen 2">
+      <div class="content">
+        <h3>SABER HACER 1</h3>
+        <p>Tipos de hosting gratuitos para aplicaciones web.</p>
+        <a href="pdf/Tipos de Hosting.pdf">Ver más</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="img/SABER HACER 2.png" alt="Imagen 3">
+      <div class="content">
+        <h3>SABER HACER 2</h3>
+        <p>Ámbito de Instalación de XAMPP.</p>
+        <a href="pdf/Ámbito de Instalación de XAMPP.pdf">Ver más</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="img/SABER HACER 3.png" alt="Imagen 4">
+      <div class="content">
+        <h3>SABER HACER 3</h3>
+        <p>Registro de cuenta en GitHub.</p>
+        <a href="pdf/Registro de cuenta en GitHub.pdf">Ver más</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="img/SABER HACER 4.png" alt="Imagen 5">
+      <div class="content">
+        <h3>SABER HACER 4</h3>
+        <p>Crear un Repositorio en GitHub.</p>
+        <a href="pdf/Crear un Repositorio en GitHub.pdf">Ver más</a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
